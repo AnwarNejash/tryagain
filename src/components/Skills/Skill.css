@@ -1,6 +1,7 @@
 /* src/components/Skills/Skills.css */
 .skills {
   background: var(--background-white);
+   text-align: center;
 }
 
 .skills-grid {
@@ -76,4 +77,5 @@
 .soft-skill-item:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
+
 }
