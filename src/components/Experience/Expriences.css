@@ -1,0 +1,76 @@
+/* src/components/Experience/Experience.css */
+.experience {
+  background: var(--background-white);
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--secondary-color);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: var(--space-xl);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 22px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px var(--secondary-color);
+}
+
+.timeline-item h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--space-xs);
+  font-size: var(--font-size-xl);
+}
+
+.date {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-sm);
+  display: inline-block;
+}
+
+.timeline-item p, .timeline-item ul {
+  margin-top: var(--space-sm);
+}
+
+.timeline-item ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline-item li {
+  padding: var(--space-xs) 0;
+  position: relative;
+  padding-left: var(--space-lg);
+}
+
+.timeline-item li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
