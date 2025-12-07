@@ -1,6 +1,7 @@
 /* src/components/Contact/Contact.css */
 .contact {
   background: var(--background-light);
+  text-align: center;
 }
 
 .contact-content {
@@ -63,4 +64,5 @@
     grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
+
 }
