@@ -1,7 +1,7 @@
 // src/App.js
 import React from 'react';
-import './App.css';
 
+import './styles/App.css';
 // Import all components
 import Header from './components/Header/Header';
 
