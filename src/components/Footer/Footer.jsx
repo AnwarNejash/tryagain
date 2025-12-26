@@ -1,36 +1,47 @@
 import React from 'react';
-import './Footer.css';
+
+import { FaGithub, FaLinkedin, FaTwitter, FaHeart, FaFacebook, FaTiktok } from 'react-icons/fa';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
-      <div className="footer-content">
-        <p>&copy; 2025   Your Name. All rights reserved.</p>
-      
-        <div className="social-links">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-          <a href="mailto:your.email@domain.com">
-            Email
-          </a>
-           <a href="mailto:your.email@domain.com">
-           Facebook
-          </a>
-           <a href="mailto:your.email@domain.com">
-          Tiktok
-          </a>
-           <a href="mailto:your.email@domain.com">
-           Telegram
-          </a>
+      <div className="container">
+        <div className="footer-content">
+          <div className="footer-logo">Nejash Anwar</div>
+          
+          <div className="social-links">
+            <a href="https://github.com/AnwarNejash/portfoliomyporject" className="social-link">
+              <FaGithub size={20} />
+            </a>
+            <a href="https://linkedin.com" className="social-link">
+              <FaLinkedin size={20} />
+            </a>
+            <a href="https://twitter.com" className="social-link">
+              <FaTwitter size={20} />
+            </a>
+            <a href="https://facebook.com" className="social-link">
+              <FaFacebook size={20} />
+            </a>
+            <a href="https://tiktoke.com" className="social-link">
+              <FaTiktok size={20} />
+           
+            </a>
+          </div>
+        </div>
+        
+        <div className="footer-bottom">
+          <p>
+            © {currentYear} Nejash Anwar. All rights reserved. 
+            <br />
+            Built with <FaHeart style={{ color: '#E53E3E', margin: '0 5px' }} /> 
+            using React.js
+          </p>
         </div>
       </div>
     </footer>
   );
 };
-
 
 export default Footer;
