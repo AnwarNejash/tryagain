@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="hero-content">
        
  <img src={nejash} alt=""  className=" image"/>
-        <h1 className=" myname"> I am Nejash Anwar  </h1>
+        <h1 className=" myname"> I am Nejash Anwar Yusuf Alii </h1>
         <h2>Full-Stack Developer based in Ethiopia</h2>
         
         <p>Specializing in Spring Boot Backend & React Frontend</p>
@@ -24,5 +24,6 @@ const Hero = () => {
  
   );
 };
+
 
 export default Hero;
